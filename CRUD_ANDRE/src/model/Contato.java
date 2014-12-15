@@ -2,12 +2,13 @@ package model;
 
 public class Contato {
 	
-	public Contato(String nome, String cpf, Integer idade, String telefone) {
+	public Contato(String nome, String cpf, Integer idade, String telefone, String email) {
 	
 		this.setNome(nome);
 		this.setCpf(cpf);
 		this.setIdade(idade);
 		this.setTelefone(telefone);
+		this.setEmail(email); 
 	}
 	
 	public Contato() {
@@ -19,6 +20,7 @@ public class Contato {
 	private String cpf;
 	private Integer idade;
 	private String telefone;
+	private String email;
 	
 	public Integer getCod() {
 		return cod;
@@ -64,6 +66,14 @@ public class Contato {
 	public String toString() {
 		return "Contato [cod=" + cod + ", nome=" + nome + ", cpf=" + cpf
 				+ ", idade=" + idade + ", telefone=" + telefone + "]";
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 }
