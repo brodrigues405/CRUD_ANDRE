@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+
+
+	<fieldset>
+			<legend>Dados</legend>
+	
+			<h:form>
+				<h:panelGrid columns="2" >
+				
+					<h:column>	
+						<h:outputLabel value="Nome" />
+					</h:column>
+					<h:inputText  id="nome" size="30" maxlength="30" />
+					
+					<h:column >
+						<h:outputLabel value="CPF" />
+					</h:column>
+					<h:inputText id="cpf" size="14" maxlength="15"/>
+					
+					<h:column>
+						<h:commandButton value="Cadastrar" />
+					</h:column>
+				
+				</h:panelGrid>
+			</h:form>
+	
+	
+	
+	</fieldset>
+
+
+
+
+</body> 
+</html>
