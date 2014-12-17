@@ -4,7 +4,9 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"> 
 
-<h:head></h:head> 
+<h:head>
+	
+</h:head> 
 <body> 
 
 
@@ -25,7 +27,26 @@
 					<h:inputText id="cpf" size="14" maxlength="15"/>
 					
 					<h:column>
+						<h:outputLabel value="Idade" />
+					</h:column>
+					<h:inputText id="idade" maxlength="5" />
+					
+					<h:column>
+						<h:outputLabel value="Telefone" />
+					</h:column>
+					<h:inputText value="" id="telefone" maxlength="12" />
+					
+					<h:column>
+						<h:outputLabel value="Email" />
+					</h:column>
+					<h:inputText value="" id="email" maxlength="100" size="70" />
+					
+					<h:column>
 						<h:commandButton value="Cadastrar" />
+					</h:column>
+					
+					<h:column>
+						<h:commandButton value="Limpar" type="reset" />
 					</h:column>
 				
 				</h:panelGrid>
